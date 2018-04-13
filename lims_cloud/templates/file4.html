@@ -1,0 +1,306 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Welcome to Lime</title>
+<link rel="stylesheet" href="css/style.css" type="text/css" media="all"/>
+</head>
+<body>
+<div id="main-container">
+	<header> <img src="images/logo.png" alt="Stability Link Logo" class="logo"/> <a href="index.html" class="home"></a>
+		<nav>
+			<ul>
+				<li><a href="">System Admin</a>
+					<ul class="system-admin">
+						<li><a href="">Sysyem Admin Sublink - 1</a></li>
+						<li><a href="">Sysyem Admin Sublink - 2</a></li>
+						<li><a href="">Sysyem Admin Sublink - 3</a></li>
+					</ul>
+				</li>
+				<li><a href="">Static Data</a>
+					<ul class="static-data">
+						<li><a href="">Static Data Sublink - 1</a></li>
+						<li><a href="">Static Data Sublink - 2</a></li>
+						<li><a href="">Static Data Sublink - 3</a></li>
+					</ul>
+				</li>
+				<li><a href="">Transaction</a>
+					<ul class="transaction">
+						<li><a href="">Transaction Sublink - 1</a></li>
+						<li><a href="">Transaction Sublink - 2</a></li>
+						<li><a href="">Transaction Sublink - 3</a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+		<div class="pull-right setting"> <span>Setting</span>
+			<div class="setting-links"> <a href="#slide" class="link-animation profile slide_open">Profile</a> <a href="" class="link-animation logout">Logout</a> </div>
+			<div id="slide" class="popup-visible-off"> <a class="slide_close btn-close">X</a> <span>Edit Profile</span>
+				<hr/>
+				<div class="full-width uploaded-pic"><img src="images/bill-gates.png" width="100" height="100"  alt="Name"/></div>
+				<input type="file"/>
+				<br/>
+				<input type="submit" name="Submit" value="Submit" class="btn1"/>
+			</div>
+		</div>
+	</header>
+	<div id="content-area" class="homepage">
+		<button type="button" class="btn-yellow">Save</button>
+		<button type="button" class="btn-yellow">Reset</button>
+		<button type="button" class="btn-yellow">Back</button>
+		
+		<div class="head-form">
+			<div class="row">
+				<div class="part6">
+					<div class="clearfix">
+						<div class="part6 part4 top">
+							<label>Specification Id*</label>
+						</div>
+						<div class="part6 part8">
+							<div class="part11">
+								<input type="text" class="form-input" name="specificationId" id="specificationId">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="part6">
+					<div class="clearfix">
+						<div class="part6 part4 top">
+							<label>Description</label>
+						</div>
+						<div class="part6 part8">
+							<div class="part11">
+								<input type="text" class="form-input" name="desc" id="desc">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="part6">
+					<div class="clearfix">
+						<div class="part6 part4 top">
+							<label>Version</label>
+						</div>
+						<div class="part6 part8">
+							<div class="part11">
+								<input type="text" class="form-input" name="version" id="version">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="part6">
+					<div class="part6">
+						<div class="clearfix">
+							<div class="part6 part4 top">
+								<label>Variant</label>
+							</div>
+							<div class="part6 part8">
+								<div class="part11">
+									<input type="text" class="form-input" name="variant" id="variant">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="part6">
+						<div class="clearfix">
+							<div class="part6 part4 top">
+								<input type="checkbox" class="form-input" name="active" id="active" checked>
+							</div>
+							<div class="part6 part8">
+								Active
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			
+			<div class="row">
+				<div class="part2">
+					<div class="clearfix">
+						<div class="part6 part4 top">
+							<label>Notes</label>
+						</div>
+					</div>
+				</div>
+				<div class="part10">
+					<div class="clearfix">
+						<div class="part9 top">
+							<textarea class="form-input" rows=5></textarea>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="part4 menu-div-double" style="margin-left:-20px">
+				<label>Parameter</label>
+			</div>
+			<div class="part4 menu-div-double">
+				<label>Attachments</label>
+			</div>
+		</div>
+		<div class="menu-div-sub">
+			<div class="row">
+				<div class="part1">
+					<button type="button" class="btn-yellow" id="add_new_row_tbl1">Add</button>
+				</div>
+				<div class="part1">
+					<button type="button" class="btn-yellow delete_row" data-tbl="delRow">Remove</button>
+				</div>
+			</div>
+		</div>
+		<table border="1" cellspacing="0" cellpadding="5" id="tbl" class="table1">
+			<tr class="table-grey-head">
+				<th><input type="checkbox" class="selectAll"></th>
+				<th>Analysis Id</th>
+				<th>Version</th>
+				<th>Variant</th>
+				<th>Parameter Id</th>
+				<th>Parameter type</th>
+			</tr>
+			<tbody id="table1">
+				<tr>
+					<td><input type="checkbox" name="delRow" value="1" checked></td>
+					<td>QC Run tests</td>
+					<td>1</td>
+					<td>1</td>
+					<td>Acid</td>
+					<td>Standard</td>
+				</tr>
+				<tr>
+					<td><input type="checkbox"name="delRow" value="2" ></td>
+					<td>QC Run tests</td>
+					<td>1</td>
+					<td>1</td>
+					<td>Salt</td>
+					<td>Standard</td>
+				</tr>
+				<tr>
+					<td><input type="checkbox" name="delRow" value="3" checked></td>
+					<td>QC Run tests</td>
+					<td>1</td>
+					<td>1</td>
+					<td>PH</td>
+					<td>Standard</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<div class="row">
+			<div class="part4 menu-div-double" style="margin-left:-20px">
+				<label>limit</label>
+			</div>
+		</div>
+		<div class="menu-div-sub">
+			<div class="row">
+				<div class="part1">
+					<button type="button" class="btn-yellow" id="add_new_row_tbl2">Add</button>
+				</div>
+				<div class="part1">
+					<button type="button" class="btn-yellow delete_row" data-tbl="delRow2">Remove</button>
+				</div>
+			</div>
+		</div>
+		<table border="1" cellspacing="0" cellpadding="5" id="tbl" class="table2">
+			<tr class="table-grey-head">
+				<th><input type="checkbox" class="selectAll"></th>
+				<th>Test Parameter</th>
+				<th>Limit Type</th>
+				<th>Operator</th>
+				<th>Limit</th>
+				<th>UOM</th>
+			</tr>
+			<tbody id="table2">
+				<tr>
+					<td><input type="checkbox"  name="delRow2" value="1" checked></td>
+					<td>QC Run Tests - Acid</td>
+					<td>InSpec</td>
+					<td>&gt;=</td>
+					<td>0.90</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td><input type="checkbox" name="delRow2" value="2" ></td>
+					<td>QC Run Tests - Salt</td>
+					<td>InSpec</td>
+					<td>&lt;</td>
+					<td>1.95</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td><input type="checkbox" name="delRow2" value="3"  checked></td>
+					<td>QC Run Tests - pH</td>
+					<td>InSpec</td>
+					<td>&gt;=</td>
+					<td>0.90</td>
+					<td></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="js/jquery-ui.js"></script>
+<script src="js/custom.js"></script> 
+<script src="js/jquery.popupoverlay.js"></script> 
+<script>
+$(document).ready(function () {
+    $('#slide').popup({
+        focusdelay: 500,
+        outline: true,
+        vertical: 'top'
+    });
+
+    /*add new row*/
+    var lastRow = $('.table1 tr:last td input[type="checkbox"]').attr('value');
+    var counter = lastRow;
+	$("#add_new_row_tbl1").click(function(event){
+		event.preventDefault();
+		counter++;
+		var r = $('<tr><td><input type="checkbox" name="delRow" value="'+counter+'"></td><td></td><td></td><td></td><td></td><td></td></tr>');
+		$("#table1").append(r);
+	});
+
+
+	/*add new row*/
+    var lastRow2 = $('.table2 tr:last td input[type="checkbox"]').attr('value');
+    var counter2 = lastRow2;
+	$("#add_new_row_tbl2").click(function(event){
+		event.preventDefault();
+		counter2++;
+		var r = $('<tr><td><input type="checkbox" name="delRow2" value="'+counter2+'"></td><td></td><td></td><td></td><td></td><td></td></tr>');
+		$("#table2").append(r);
+	});
+
+	/*delete row*/
+	$(document).on("click",".delete_row",function(){
+		var tblType = $(this).attr("data-tbl");
+		if(tblType=="delRow")
+		{
+			$.each($("input[name='delRow']:checked"), function(){     
+	            var a = $(this).val();
+	        	$(".table1 tr td input:checkbox[value="+a+"]").parent().parent().hide();       
+	        });
+		}
+		else
+		{
+	        $.each($("input[name='delRow2']:checked"), function(){     
+	            var a = $(this).val();
+	        	$(".table2 tr td input:checkbox[value="+a+"]").parent().parent().hide();       
+	        });
+		}
+	});
+  
+  	/*select all checkbox*/
+	$('.selectAll').click(function (e) {
+	    $(this).closest('table').find('td input:checkbox').prop('checked', this.checked);
+	});
+});
+</script>
+</body>
+</html>

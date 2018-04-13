@@ -1,0 +1,156 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Welcome to Lime</title>
+<link rel="stylesheet" href="css/style.css" type="text/css" media="all"/>
+</head>
+<body>
+<div id="main-container">
+	<header> <img src="images/logo.png" alt="Stability Link Logo" class="logo"/> <a href="index.html" class="home"></a>
+		<nav>
+			<ul>
+				<li><a href="">System Admin</a>
+					<ul class="system-admin">
+						<li><a href="">Sysyem Admin Sublink - 1</a></li>
+						<li><a href="">Sysyem Admin Sublink - 2</a></li>
+						<li><a href="">Sysyem Admin Sublink - 3</a></li>
+					</ul>
+				</li>
+				<li><a href="">Static Data</a>
+					<ul class="static-data">
+						<li><a href="">Static Data Sublink - 1</a></li>
+						<li><a href="">Static Data Sublink - 2</a></li>
+						<li><a href="">Static Data Sublink - 3</a></li>
+					</ul>
+				</li>
+				<li><a href="">Transaction</a>
+					<ul class="transaction">
+						<li><a href="">Transaction Sublink - 1</a></li>
+						<li><a href="">Transaction Sublink - 2</a></li>
+						<li><a href="">Transaction Sublink - 3</a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+		<div class="pull-right setting"> <span>Setting</span>
+			<div class="setting-links"> <a href="#slide" class="link-animation profile slide_open">Profile</a> <a href="" class="link-animation logout">Logout</a> </div>
+			<div id="slide" class="popup-visible-off"> <a class="slide_close btn-close">X</a> <span>Edit Profile</span>
+				<hr/>
+				<div class="full-width uploaded-pic"><img src="images/bill-gates.png" width="100" height="100"  alt="Name"/></div>
+				<input type="file"/>
+				<br/>
+				<input type="submit" name="Submit" value="Submit" class="btn1"/>
+			</div>
+		</div>
+	</header>
+	<div id="content-area" class="homepage">
+		<div class="row">
+			<div class="part3 list-div-left">
+				<div class="list-div-search-title">List Search</div>
+			</div>
+			<div class="part9 list-div-right">
+				<button type="button" class="btn-yellow">Add</button>
+				<button type="button" class="btn-yellow">View</button>
+				<button type="button" class="btn-yellow">Edit</button>
+				<button type="button" class="btn-yellow">Delete</button>
+			</div>
+		</div>
+		<div class="row">
+			<div class="part3 list-div-left">
+				<div class="search-div">
+					<div class="row">
+						<div class="part9">
+							<select class="form-input">
+								<option>Search By</option>
+								<option>All Specification</option>
+								<option>By Specification ID</option>
+							</select>
+						</div>
+					</div>
+					<div class="row">
+						<div class="part6">
+							<div class="clearfix">
+								<input type="text" class="form-input">
+							</div>
+						</div>
+						<div class="part3">
+							<div class="clearfix">
+								<button class="btn-yellow search-div-btn">OK</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="part9 list-div-right">
+				<table border="1" cellspacing="0" cellpadding="20" id="tbl">
+					<tr class="table-blue-head">
+						<th>Select</th>
+						<th>Role ID</th>
+						<th>Description</th>
+					</tr>
+					<tbody>
+						<tr>
+							<td><input type="radio" checked></td>
+							<td>SysAdm</td>
+							<td>System Admin</td>
+						</tr>
+						<tr>
+							<td><input type="radio"></td>
+							<td>Requestor</td>
+							<td>Sample Reques...</td>
+						</tr>
+						<tr>
+							<td><input type="radio"></td>
+							<td>Receiver</td>
+							<td>Sample Receiver</td>
+						</tr>
+						<tr>
+							<td><input type="radio"></td>
+							<td>Labmanager</td>
+							<td>Laboratory Man...</td>
+						</tr>
+						<tr>
+							<td><input type="radio"></td>
+							<td>Analyst</td>
+							<td>Laboratory Ana...</td>
+						</tr>
+						<tr>
+							<td><input type="radio"></td>
+							<td>Sample Approver</td>
+							<td>Sample Approver</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="part3 list-div-left">
+			</div>
+			<div class="part9 list-div-right">
+				<label class="table-blue-footer-left">Page <span>1</span> of <span>20</span> Total Items: 6</label>
+				<ul class="table-blue-footer-right">
+					<li><a href="#">1</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="js/jquery-ui.js"></script>
+<script src="js/custom.js"></script> 
+<script src="js/jquery.popupoverlay.js"></script> 
+<script>
+$(document).ready(function () {
+    $('#slide').popup({
+        focusdelay: 500,
+        outline: true,
+        vertical: 'top'
+    });
+  
+});
+</script>
+</body>
+</html>

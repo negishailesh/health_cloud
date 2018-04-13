@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Welcome to Lims Cloud</title>
+<link rel="stylesheet" href="/static/css/style.css" type="text/css" media="all"/>
+</head>
+<body>
+<div id="main-container">
+	<header>
+		<img src="/static/images/logo.png" alt="Stability Link Logo" class="logo"/> 
+	</header>
+	<div id="content-area" class="homepage">
+		<div class="login-box-container">
+		<div class="login-window">
+			<div class="full-width">
+				<label>User Name <span>*</span></label>
+				<input type="text" placeholder="Your Company Email ID" class="error"/>
+			</div>
+			<div class="full-width">
+				<label>Password <span>*</span></label>
+				<input type="text"/>
+			</div>
+			<div class="full-width">
+				<button>LOGIN</button>
+			</div>
+		</div>
+	</div>
+	</div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> 
+<script src="/static/js/jquery.popupoverlay.js"></script> 
+<script src="/static/js/custom.js"></script> 
+<script>
+$(document).ready(function () {
+    $('#slide').popup({
+        focusdelay: 500,
+        outline: true,
+        vertical: 'top'
+    });
+  
+});
+</script>
+</body>
+</html>

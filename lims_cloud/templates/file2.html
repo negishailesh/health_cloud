@@ -1,0 +1,299 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Welcome to Lime</title>
+<link rel="stylesheet" href="css/style.css" type="text/css" media="all"/>
+</head>
+<body>
+<div id="main-container">
+	<header> <img src="images/logo.png" alt="Stability Link Logo" class="logo"/> <a href="index.html" class="home"></a>
+		<nav>
+			<ul>
+				<li><a href="">System Admin</a>
+					<ul class="system-admin">
+						<li><a href="">Sysyem Admin Sublink - 1</a></li>
+						<li><a href="">Sysyem Admin Sublink - 2</a></li>
+						<li><a href="">Sysyem Admin Sublink - 3</a></li>
+					</ul>
+				</li>
+				<li><a href="">Static Data</a>
+					<ul class="static-data">
+						<li><a href="">Static Data Sublink - 1</a></li>
+						<li><a href="">Static Data Sublink - 2</a></li>
+						<li><a href="">Static Data Sublink - 3</a></li>
+					</ul>
+				</li>
+				<li><a href="">Transaction</a>
+					<ul class="transaction">
+						<li><a href="">Transaction Sublink - 1</a></li>
+						<li><a href="">Transaction Sublink - 2</a></li>
+						<li><a href="">Transaction Sublink - 3</a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+		<div class="pull-right setting"> <span>Setting</span>
+			<div class="setting-links"> <a href="#slide" class="link-animation profile slide_open">Profile</a> <a href="" class="link-animation logout">Logout</a> </div>
+			<div id="slide" class="popup-visible-off"> <a class="slide_close btn-close">X</a> <span>Edit Profile</span>
+				<hr/>
+				<div class="full-width uploaded-pic"><img src="images/bill-gates.png" width="100" height="100"  alt="Name"/></div>
+				<input type="file"/>
+				<br/>
+				<input type="submit" name="Submit" value="Submit" class="btn1"/>
+			</div>
+		</div>
+	</header>
+	<div id="content-area" class="homepage">
+		<button type="button" class="btn-yellow">Save</button>
+		<button type="button" class="btn-yellow">Reset</button>
+		<button type="button" class="btn-yellow">Back</button>
+		
+		<div class="head-form">
+			<div class="row">
+				<div class="part6">
+					<div class="clearfix">
+						<div class="part6 part4 top">
+							<label>Instrument Id*</label>
+						</div>
+						<div class="part6 part8">
+							<div class="part11">
+								<input type="text" class="form-input" name="instrumentId" id="instrumentId">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="part6">
+					<div class="clearfix">
+						<div class="part6 part4 top">
+							<label>Instrument group*</label>
+						</div>
+						<div class="part6 part8">
+							<div class="part11">
+								<input type="text" class="form-input search-input" name="instrumentGrp" id="instrumentGrp">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="part6">
+					<div class="clearfix">
+						<div class="part6 part4 top">
+							<label>User group*</label>
+						</div>
+						<div class="part6 part8">
+							<div class="part11">
+								<input type="text" class="form-input search-input" name="userGrp" id="userGrp">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="part2">
+					<div class="clearfix">
+						<div class="part6 part4 top">
+							<label>Description</label>
+						</div>
+					</div>
+				</div>
+				<div class="part10">
+					<div class="clearfix">
+						<div class="part9 top">
+							<input type="text" class="form-input" name="desc" id="desc">
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="part6">
+					<div class="clearfix">
+						<div class="part6 part4 top">
+							<label>Modal Number</label>
+						</div>
+						<div class="part6 part8">
+							<div class="part11">
+								<input type="text" class="form-input" name="modalNumber" id="modalNumber">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="part6">
+					<div class="clearfix">
+						<div class="part6 part4 top">
+							<label>Asset Number</label>
+						</div>
+						<div class="part6 part8">
+							<div class="part11">
+								<input type="text" class="form-input" name="assetNumber" id="assetNumber">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="part6">
+					<div class="clearfix">
+						<div class="part6 part4 top">
+							<label>Calibration Frequency</label>
+						</div>
+						<div class="part6 part8">
+							<div class="part11">
+								<select class="form-input">
+									<option>Monthly</option>
+									<option>Yearly</option>
+								</select>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="part6">
+					<div class="clearfix">
+						<div class="part6 part4 top">
+							<label>Next callibration Date</label>
+						</div>
+						<div class="part6 part8">
+							<div class="part11">
+								<input type="text" class="form-input datepicker" name="NextCallDt" id="NextCallDt">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			
+			<div class="row">
+				<div class="clearfix">
+					<div class="part2 top">
+						<label>Training Required</label>
+					</div>
+					<div class="part2">
+						<select class="form-input">
+							<option>yes</option>
+							<option>no</option>
+						</select>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="part2">
+					<div class="clearfix">
+						<div class="part6 part4 top">
+							<label>Notes</label>
+						</div>
+					</div>
+				</div>
+				<div class="part10">
+					<div class="clearfix">
+						<div class="part9 top">
+							<textarea class="form-input" rows=5></textarea>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="menu-div">
+			<label>Attachments</label>
+		</div>
+		<div class="menu-div-sub">
+			<div class="row">
+				<div class="part1">
+					<button type="button" class="btn-yellow" id="add-new-row">Add</button>
+				</div>
+				<div class="part1">
+					<button type="button" class="btn-yellow delete_row">Remove</button>
+				</div>
+			</div>
+		</div>
+		<table border="1" cellspacing="0" cellpadding="5" id="tbl">
+			<tr class="table-grey-head">
+				<th><input type="checkbox" id="selectAll"></th>
+				<th style="width:30%;">Serial No</th>
+				<th style="width:30%;">File name</th>
+				<th style="width:30%;">View</th>
+			</tr>
+			<tbody id="create-edit-data-table">
+				<tr>
+					<td><input type="checkbox" name="delRow" id="" value="1" checked></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td><input type="checkbox" name="delRow" id="" value="2"></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td><input type="checkbox" name="delRow" id="" value="3" checked></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td><input type="checkbox" name="delRow" id="" value="4"></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td><input type="checkbox" name="delRow" id="" value="5"></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td><input type="checkbox" name="delRow" id="" value="6"></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="js/jquery-ui.js"></script>
+<script src="js/custom.js"></script> 
+<script src="js/jquery.popupoverlay.js"></script> 
+<script>
+$(document).ready(function () {
+    $('#slide').popup({
+        focusdelay: 500,
+        outline: true,
+        vertical: 'top'
+    });
+
+    /*add new row*/
+    var lastRow = $('#tbl tr:last td input[type="checkbox"]').attr('value');
+    var counter = lastRow;
+	$("#add-new-row").click(function(event){
+		event.preventDefault();
+		counter++;
+		var r = $('<tr><td><input type="checkbox" name="delRow" value="'+counter+'"></td><td></td><td></td><td></td></tr>');
+		$("#create-edit-data-table").append(r);
+	});
+
+    /*delete row*/
+	$(document).on("click",".delete_row",function(){
+		var favorite = [];
+        $.each($("input[name='delRow']:checked"), function(){     
+            var a = $(this).val();
+        	$("input:checkbox[value="+a+"]").parent().parent().hide();       
+        });
+	});
+
+    /*select all checkbox*/
+	$('#selectAll').click(function (e) {
+	    $(this).closest('table').find('td input:checkbox').prop('checked', this.checked);
+	});
+  
+});
+</script>
+</body>
+</html>

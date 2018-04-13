@@ -37,8 +37,6 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'login',
-    'dashboard',
 ]
 
 MIDDLEWARE = [
@@ -127,9 +125,4 @@ STATICFILES_DIRS = (
 )
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-MEDIA_ROOT = os.path.join(BASE_DIR, 'mediafiles')
-
-
-
-
-AUTH_USER_MODEL = 'login.Users'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'staticfiles')
