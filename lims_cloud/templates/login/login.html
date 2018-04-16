@@ -14,17 +14,23 @@
 	<div id="content-area" class="homepage">
 		<div class="login-box-container">
 		<div class="login-window">
+			<form action="/login/" method="post">
+			{% csrf_token %}
 			<div class="full-width">
 				<label>User Name <span>*</span></label>
-				<input type="text" placeholder="Your Company Email ID" class="error"/>
+				<input name="username" type="email" placeholder="Your Company Email ID" class="error"/>
 			</div>
 			<div class="full-width">
 				<label>Password <span>*</span></label>
-				<input type="text"/>
+				<input name="password" type="password"/>
 			</div>
 			<div class="full-width">
 				<button>LOGIN</button>
+			</form>
 			</div>
+		{% if error %}
+                <p class="alert alert-error">{{ error }}</p>
+                {% endif %}
 		</div>
 	</div>
 	</div>
@@ -41,6 +47,9 @@ $(document).ready(function () {
     });
   
 });
+</script>
+<script>
+
 </script>
 </body>
 </html>
