@@ -4,11 +4,11 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Welcome to Lime</title>
-<link rel="stylesheet" href="css/style.css" type="text/css" media="all"/>
+<link rel="stylesheet" href="/static/css/style.css" type="text/css" media="all"/>
 </head>
 <body>
 <div id="main-container">
-	<header> <img src="images/logo.png" alt="Stability Link Logo" class="logo"/> <a href="index.html" class="home"></a>
+	<header> <img src="/static/images/logo.png" alt="Stability Link Logo" class="logo"/> <a href="index.html" class="home"></a>
 		<nav>
 			<ul>
 				<li><a href="">System Admin</a>
@@ -38,7 +38,7 @@
 			<div class="setting-links"> <a href="#slide" class="link-animation profile slide_open">Profile</a> <a href="" class="link-animation logout">Logout</a> </div>
 			<div id="slide" class="popup-visible-off"> <a class="slide_close btn-close">X</a> <span>Edit Profile</span>
 				<hr/>
-				<div class="full-width uploaded-pic"><img src="images/bill-gates.png" width="100" height="100"  alt="Name"/></div>
+				<div class="full-width uploaded-pic"><img src="/static/images/bill-gates.png" width="100" height="100"  alt="Name"/></div>
 				<input type="file"/>
 				<br/>
 				<input type="submit" name="Submit" value="Submit" class="btn1"/>
@@ -245,9 +245,9 @@
 	</div>
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script src="js/jquery-ui.js"></script>
-<script src="js/custom.js"></script> 
-<script src="js/jquery.popupoverlay.js"></script> 
+<script src="/static/js/jquery-ui.js"></script>
+<script src="/static/js/custom.js"></script> 
+<script src="/static/js/jquery.popupoverlay.js"></script> 
 <script>
 $(document).ready(function () {
     $('#slide').popup({

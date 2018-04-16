@@ -52,152 +52,38 @@
 		
 		<div class="head-form">
 			<div class="row">
-				<div class="part6">
-					<div class="clearfix">
-						<div class="part6 part4 top">
-							<label>Instrument Id*</label>
-						</div>
-						<div class="part6 part8">
-							<div class="part11">
-								<input type="text" class="form-input" name="instrumentId" id="instrumentId">
-							</div>
-						</div>
+				<div class="clearfix">
+					<div class="part2 top">
+						<label>Role Id*</label>
+					</div>
+					<div class="part3">
+						<input type="text" class="form-input" name="roleId" id="roleId">
 					</div>
 				</div>
 			</div>
-			<div class="row">
-				<div class="part6">
-					<div class="clearfix">
-						<div class="part6 part4 top">
-							<label>Instrument group*</label>
-						</div>
-						<div class="part6 part8">
-							<div class="part11">
-								<input type="text" class="form-input search-input" name="instrumentGrp" id="instrumentGrp">
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="part6">
-					<div class="clearfix">
-						<div class="part6 part4 top">
-							<label>User group*</label>
-						</div>
-						<div class="part6 part8">
-							<div class="part11">
-								<input type="text" class="form-input search-input" name="userGrp" id="userGrp">
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			
-			<div class="row">
-				<div class="part2">
-					<div class="clearfix">
-						<div class="part6 part4 top">
-							<label>Description</label>
-						</div>
-					</div>
-				</div>
-				<div class="part10">
-					<div class="clearfix">
-						<div class="part9 top">
-							<input type="text" class="form-input" name="desc" id="desc">
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div class="row">
-				<div class="part6">
-					<div class="clearfix">
-						<div class="part6 part4 top">
-							<label>Modal Number</label>
-						</div>
-						<div class="part6 part8">
-							<div class="part11">
-								<input type="text" class="form-input" name="modalNumber" id="modalNumber">
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="part6">
-					<div class="clearfix">
-						<div class="part6 part4 top">
-							<label>Asset Number</label>
-						</div>
-						<div class="part6 part8">
-							<div class="part11">
-								<input type="text" class="form-input" name="assetNumber" id="assetNumber">
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="part6">
-					<div class="clearfix">
-						<div class="part6 part4 top">
-							<label>Calibration Frequency</label>
-						</div>
-						<div class="part6 part8">
-							<div class="part11">
-								<select class="form-input">
-									<option>Monthly</option>
-									<option>Yearly</option>
-								</select>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="part6">
-					<div class="clearfix">
-						<div class="part6 part4 top">
-							<label>Next callibration Date</label>
-						</div>
-						<div class="part6 part8">
-							<div class="part11">
-								<input type="text" class="form-input datepicker" name="NextCallDt" id="NextCallDt">
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			
-			
 			<div class="row">
 				<div class="clearfix">
 					<div class="part2 top">
-						<label>Training Required</label>
+						<label>Description</label>
 					</div>
-					<div class="part2">
-						<select class="form-input">
-							<option>yes</option>
-							<option>no</option>
-						</select>
+					<div class="part6">
+						<input type="text" class="form-input" name="desc" id="desc">
 					</div>
 				</div>
 			</div>
 			<div class="row">
-				<div class="part2">
-					<div class="clearfix">
-						<div class="part6 part4 top">
-							<label>Notes</label>
-						</div>
+				<div class="clearfix">
+					<div class="part2 top">
+						<label>Notes</label>
 					</div>
-				</div>
-				<div class="part10">
-					<div class="clearfix">
-						<div class="part9 top">
-							<textarea class="form-input" rows=5></textarea>
-						</div>
+					<div class="part6">
+						<textarea name="notes" id="notes" class="form-input" rows=5></textarea>
 					</div>
 				</div>
 			</div>
 		</div>
 		<div class="menu-div">
-			<label>Attachments</label>
+			<label>Menu</label>
 		</div>
 		<div class="menu-div-sub">
 			<div class="row">
@@ -209,58 +95,50 @@
 				</div>
 			</div>
 		</div>
-		<table border="1" cellspacing="0" cellpadding="5" id="tbl">
-			<tr class="table-grey-head">
+		<table border="1" cellspacing="0" cellpadding="0" id="tbl">
+			<tr>
 				<th><input type="checkbox" id="selectAll"></th>
-				<th style="width:30%;">Serial No</th>
-				<th style="width:30%;">File name</th>
-				<th style="width:30%;">View</th>
+				<th style="width:45%;">Module</th>
+				<th style="width:45%;">Menu Id</th>
 			</tr>
 			<tbody id="create-edit-data-table">
 				<tr>
 					<td><input type="checkbox" name="delRow" id="" value="1" checked></td>
-					<td></td>
-					<td></td>
-					<td></td>
+					<td>Sample lifecycle Management </td>
+					<td>Analysis</td>
 				</tr>
 				<tr>
 					<td><input type="checkbox" name="delRow" id="" value="2"></td>
-					<td></td>
-					<td></td>
-					<td></td>
+					<td>Sample lifecycle Management </td>
+					<td>Instruments</td>
 				</tr>
 				<tr>
 					<td><input type="checkbox" name="delRow" id="" value="3" checked></td>
-					<td></td>
-					<td></td>
-					<td></td>
+					<td>Sample lifecycle Management </td>
+					<td>Specifications</td>
 				</tr>
 				<tr>
 					<td><input type="checkbox" name="delRow" id="" value="4"></td>
-					<td></td>
-					<td></td>
-					<td></td>
+					<td>Sample lifecycle Management </td>
+					<td>Assign Analyst</td>
 				</tr>
 				<tr>
 					<td><input type="checkbox" name="delRow" id="" value="5"></td>
-					<td></td>
-					<td></td>
-					<td></td>
+					<td>Sample lifecycle Management </td>
+					<td>Sample Approval</td>
 				</tr>
 				<tr>
 					<td><input type="checkbox" name="delRow" id="" value="6"></td>
-					<td></td>
-					<td></td>
-					<td></td>
+					<td>Sample lifecycle Management </td>
+					<td>Sample Login</td>
 				</tr>
 			</tbody>
 		</table>
 	</div>
 </div>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script src="/static/js/jquery-ui.js"></script>
-<script src="/static/js/custom.js"></script> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> 
 <script src="/static/js/jquery.popupoverlay.js"></script> 
+<script src="/static/js/custom.js"></script> 
 <script>
 $(document).ready(function () {
     $('#slide').popup({
@@ -275,11 +153,11 @@ $(document).ready(function () {
 	$("#add-new-row").click(function(event){
 		event.preventDefault();
 		counter++;
-		var r = $('<tr><td><input type="checkbox" name="delRow" value="'+counter+'"></td><td></td><td></td><td></td></tr>');
+		var r = $('<tr><td><input type="checkbox" name="delRow" value="'+counter+'"></td><td></td><td></td></tr>');
 		$("#create-edit-data-table").append(r);
 	});
 
-    /*delete row*/
+	/*delete row*/
 	$(document).on("click",".delete_row",function(){
 		var favorite = [];
         $.each($("input[name='delRow']:checked"), function(){     
@@ -288,7 +166,7 @@ $(document).ready(function () {
         });
 	});
 
-    /*select all checkbox*/
+	/*select all checkbox*/
 	$('#selectAll').click(function (e) {
 	    $(this).closest('table').find('td input:checkbox').prop('checked', this.checked);
 	});

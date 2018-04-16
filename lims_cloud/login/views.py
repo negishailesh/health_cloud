@@ -5,34 +5,33 @@ from django.shortcuts import render
 from django.http import HttpResponse , HttpResponseRedirect
 from django.views.generic import View
 from django.contrib.auth import  authenticate , login
+from django.contrib.auth.decorators import login_required
+
+
 
 class LoginView(View):
     """
+    user login
     """
     http_method_names = [ 'get' , 'post']
     context = {}
     def post(self, request):
-	print "INSIDE POST"
         username = str(request.POST['username'])
         password = str(request.POST['password'])
 	user = authenticate(username = username, password = password)
 	if user is not None:
-	    print "INSIDE AUTHENTICATE"
 	    if user.is_active:
-		print "INSIDE ACTIVATION"
 		login(request, user)
-		return HttpResponseRedirect('/rango/')
+		#return HttpResponseRedirect('/rango/')
+		return HttpResponse('You Have logged in successfully')
 	    else:
-		print "INSIDE USER DISABLE"
 		context = {"error" : "Your Rango account is disabled."}
 		return render(request, 'login/login.html', context)
 	else:
-	    print "INSIDE INVALID"
 	    context = {"error" : "Invalid login details supplied."}
 	    return render(request, 'login/login.html', context)
 
     def get(self , request):
-	print "INSIDE GET"
 	context = {}
         return render(request, 'login/login.html', context)
 
@@ -40,4 +39,14 @@ class LoginView(View):
 
 
 
+class CreateUser(View):
+    """
+    this page will only be visible to super user
+    """
+    http_method_names = ['get' , 'post']
+    def get(self , request):
+        context = {}
+        return render(request, 'login/add_user.html', context)
 
+    def post(self , request):
+        pass   
